@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Evently</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body class="auth-page">
+
+    <!-- =========================
+         SIGN UP CONTAINER
+    ========================== -->
+
+    <div class="signup-container">
+
+
+        <!-- =========================
+             LEFT SIDE
+        ========================== -->
+
+        <div class="signup-left">
+
+            <div class="auth-brand">
+
+                <div class="auth-logo">
+                    E
+                </div>
+
+                <div>
+
+                    <strong>
+                        Evently
+                    </strong>
+
+                    <span>
+                        School Event Tracker
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="signup-intro">
+
+                <span class="auth-eyebrow">
+                    JOIN EVENTLY
+                </span>
+
+                <h1>
+                    Create your account.
+                </h1>
+
+                <p>
+                    Join your school community, discover events,
+                    register easily, and keep all your event passes
+                    in one place.
+                </p>
+
+            </div>
+
+
+            <div class="signup-benefits">
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Discover Events
+                        </strong>
+
+                        <p>
+                            Find academic, sports and social events.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Register Easily
+                        </strong>
+
+                        <p>
+                            Reserve your place in just a few clicks.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Get Your QR Pass
+                        </strong>
+
+                        <p>
+                            Access your event pass from anywhere.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             RIGHT SIDE
+        ========================== -->
+
+        <div class="signup-right">
+
+
+            <div class="signup-form-container">
+
+
+                <div class="signup-heading">
+
+                    <span class="auth-eyebrow">
+                        STUDENT REGISTRATION
+                    </span>
+
+                    <h2>
+                        Create your account
+                    </h2>
+
+                    <p>
+                        Fill in your details to get started.
+                    </p>
+
+                </div>
+
+
+                <!-- =========================
+                     FORM
+                ========================== -->
+
+                <form id="signupForm">
+
+
+                    <!-- FULL NAME -->
+
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- STUDENT ID -->
+
+                    <div class="form-group">
+
+                        <label for="studentId">
+                            Student ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentId"
+                            name="studentId"
+                            placeholder="Enter your student ID"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            University Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your university email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- COURSE -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="course">
+                                Course
+                            </label>
+
+                            <select
+                                id="course"
+                                name="course"
+                                required
+                            >
+
+                                <option value="">
+                                    Select course
+                                </option>
+
+                                <option value="CSE">
+                                    Computer Science
+                                </option>
+
+                                <option value="IT">
+                                    Information Technology
+                                </option>
+
+                                <option value="ECE">
+                                    Electronics & Communication
+                                </option>
+
+                                <option value="ME">
+                                    Mechanical Engineering
+                                </option>
+
+                                <option value="BBA">
+                                    Business Administration
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="year">
+                                Year
+                            </label>
+
+                            <select
+                                id="year"
+                                name="year"
+                                required
+                            >
+
+                                <option value="">
+                                    Select year
+                                </option>
+
+                                <option value="1">
+                                    1st Year
+                                </option>
+
+                                <option value="2">
+                                    2nd Year
+                                </option>
+
+                                <option value="3">
+                                    3rd Year
+                                </option>
+
+                                <option value="4">
+                                    4th Year
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- TERMS -->
+
+                    <div class="terms-group">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                required
+                            >
+
+                            <span>
+                                I agree to the Evently
+                                <a href="#">
+                                    Terms & Conditions
+                                </a>
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- CREATE ACCOUNT -->
+
+                    <button
+                        type="submit"
+                        class="signup-btn">
+
+                        Create Account
+
+                    </button>
+
+
+                </form>
+
+
+                <!-- LOGIN LINK -->
+
+                <div class="login-link">
+
+                    <span>
+                        Already have an account?
+                    </span>
+
+                    <a href="login.html">
+                        Sign in
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        const signupForm =
+            document.getElementById("signupForm");
+
+
+        signupForm.addEventListener("submit", async function(event) {
+
+            event.preventDefault();
+
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return;
+            }
+
+            try {
+                const r = await fetch("/api/auth/register", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        name: document.getElementById("fullName").value,
+                        studentId: document.getElementById("studentId").value,
+                        email: document.getElementById("email").value,
+                        password: password
+                    })
+                });
+                const d = await r.json();
+                if (!r.ok) throw new Error(d.error || "Could not create account");
+                alert("Account created successfully!");
+                window.location.href = "login.html";
+            } catch (err) {
+                alert(err.message);
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

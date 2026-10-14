@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Events | Evently</title>
+    <link rel="stylesheet" href="../css/style.css">
+<script src="../js/auth.js"></script></head>
+
+<body class="dashboard-page events-page">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <a href="../index.html" class="dashboard-logo">
+            <div class="logo-icon">E</div>
+            <div class="logo-text">
+                <span>Evently</span>
+                <small>Student Portal</small>
+            </div>
+        </a>
+
+        <nav class="sidebar-nav">
+            <span class="nav-section-title">MENU</span>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <span class="sidebar-icon">▦</span> Dashboard
+            </a>
+
+            <a href="events.html" class="sidebar-link active">
+                <span class="sidebar-icon">◫</span> Browse Events
+            </a>
+
+            <a href="my-registrations.html" class="sidebar-link">
+                <span class="sidebar-icon">✓</span> My Registrations
+            </a>
+
+            <a href="my-qr-passes.html" class="sidebar-link">
+                <span class="sidebar-icon">▣</span> My QR Passes
+            </a>
+
+            <span class="nav-section-title second">ACCOUNT</span>
+            <a href="profile.html" class="sidebar-link">
+                <span class="sidebar-icon">◉</span> Profile
+            </a>
+            <a href="settings.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span> Settings
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../login.html" class="logout-link">
+                ↪ &nbsp; Sign out
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+            <div class="header-search">
+                <span>⌕</span>
+                <input type="search" id="headerSearch"
+                       placeholder="Search events...">
+            </div>
+
+<a href="profile.html" class="header-profile">
+
+    <div class="profile-avatar">
+        M
+    </div>
+
+    <div class="profile-info">
+
+        <strong>Mark</strong>
+
+        <span>Student</span>
+
+    </div>
+
+    <span class="profile-arrow">
+        ▾
+    </span>
+
+</a>
+            </div>
+        </header>
+
+        <section class="dashboard-content">
+
+            <!-- Page heading -->
+            <div class="events-welcome">
+                <div>
+                    <span class="eyebrow">DISCOVER YOUR COMMUNITY</span>
+                    <h1>Explore Events</h1>
+                    <p>
+                        Find something exciting happening around your school.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Search -->
+            <div class="events-search-panel">
+                <span class="search-symbol">⌕</span>
+                <input type="search" id="eventSearch"
+                       placeholder="Search by event name or location...">
+                <span class="search-hint">Find your next experience</span>
+            </div>
+
+            <!-- Category filters -->
+            <div class="event-filter-row">
+                <div class="event-filters">
+                    <button class="filter-btn active" data-category="All">
+                        All Events
+                    </button>
+                    <button class="filter-btn" data-category="Academic">
+                        Academic
+                    </button>
+                    <button class="filter-btn" data-category="Sports">
+                        Sports
+                    </button>
+                    <button class="filter-btn" data-category="Cultural">
+                        Cultural
+                    </button>
+                    <button class="filter-btn" data-category="Technology">
+                        Technology
+                    </button>
+                </div>
+
+                <span class="events-count" id="eventsCount">
+                    6 events
+                </span>
+            </div>
+
+            <!-- Event cards -->
+            <div class="event-cards-grid" id="eventGrid">
+
+                <article class="event-card"
+                         data-category="Sports"
+                         data-search="annual sports day school ground athletics competition">
+
+                    <div class="event-card-cover cover-sports">
+                        <span class="cover-symbol">🏆</span>
+                        <span class="cover-tag">SPORTS</span>
+                        <span class="cover-date">20 OCT 2026</span>
+                    </div>
+
+                    <div class="event-card-body">
+                        <div class="event-card-meta">
+                            <span>◷ 09:00 AM</span>
+                            <span>⌖ School Ground</span>
+                        </div>
+                        <h3>Annual Sports Day</h3>
+                        <p>
+                            A day of friendly competition, teamwork,
+                            athletics and school spirit.
+                        </p>
+                        <div class="event-card-footer">
+                            <span class="event-open">Registration open</span>
+                            <a href="event-details.html"
+                               class="event-view-btn">View Details →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card"
+                         data-category="Academic"
+                         data-search="science exhibition science hall projects experiments">
+
+                    <div class="event-card-cover cover-academic">
+                        <span class="cover-symbol">🔬</span>
+                        <span class="cover-tag">ACADEMIC</span>
+                        <span class="cover-date">25 OCT 2026</span>
+                    </div>
+
+                    <div class="event-card-body">
+                        <div class="event-card-meta">
+                            <span>◷ 10:00 AM</span>
+                            <span>⌖ Science Hall</span>
+                        </div>
+                        <h3>Science Exhibition</h3>
+                        <p>
+                            Discover creative student projects,
+                            experiments and scientific ideas.
+                        </p>
+                        <div class="event-card-footer">
+                            <span class="event-open">Registration open</span>
+                            <a href="event-details.html"
+                               class="event-view-btn">View Details →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card"
+                         data-category="Cultural"
+                         data-search="cultural festival auditorium dance music performances">
+
+                    <div class="event-card-cover cover-cultural">
+                        <span class="cover-symbol">🎭</span>
+                        <span class="cover-tag">CULTURAL</span>
+                        <span class="cover-date">02 NOV 2026</span>
+                    </div>
+
+                    <div class="event-card-body">
+                        <div class="event-card-meta">
+                            <span>◷ 11:00 AM</span>
+                            <span>⌖ Main Auditorium</span>
+                        </div>
+                        <h3>Cultural Festival</h3>
+                        <p>
+                            Celebrate creativity with music,
+                            dance, performances and art.
+                        </p>
+                        <div class="event-card-footer">
+                            <span class="event-open">Registration open</span>
+                            <a href="event-details.html"
+                               class="event-view-btn">View Details →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card"
+                         data-category="Technology"
+                         data-search="school tech fest innovation lab coding robotics ai">
+
+                    <div class="event-card-cover cover-tech">
+                        <span class="cover-symbol">💻</span>
+                        <span class="cover-tag">TECHNOLOGY</span>
+                        <span class="cover-date">08 NOV 2026</span>
+                    </div>
+
+                    <div class="event-card-body">
+                        <div class="event-card-meta">
+                            <span>◷ 10:30 AM</span>
+                            <span>⌖ Innovation Lab</span>
+                        </div>
+                        <h3>School Tech Fest</h3>
+                        <p>
+                            Explore coding, robotics, innovation
+                            and exciting technology projects.
+                        </p>
+                        <div class="event-card-footer">
+                            <span class="event-open">Registration open</span>
+                            <a href="event-details.html"
+                               class="event-view-btn">View Details →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card"
+                         data-category="Academic"
+                         data-search="career guidance seminar career planning lecture hall">
+
+                    <div class="event-card-cover cover-career">
+                        <span class="cover-symbol">🎓</span>
+                        <span class="cover-tag">ACADEMIC</span>
+                        <span class="cover-date">12 NOV 2026</span>
+                    </div>
+
+                    <div class="event-card-body">
+                        <div class="event-card-meta">
+                            <span>◷ 02:00 PM</span>
+                            <span>⌖ Lecture Hall</span>
+                        </div>
+                        <h3>Career Guidance Seminar</h3>
+                        <p>
+                            Meet experienced speakers and discover
+                            possible future career paths.
+                        </p>
+                        <div class="event-card-footer">
+                            <span class="event-open">Registration open</span>
+                            <a href="event-details.html"
+                               class="event-view-btn">View Details →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card"
+                         data-category="Cultural"
+                         data-search="music night open stage performances student concert">
+
+                    <div class="event-card-cover cover-music">
+                        <span class="cover-symbol">🎵</span>
+                        <span class="cover-tag">CULTURAL</span>
+                        <span class="cover-date">18 NOV 2026</span>
+                    </div>
+
+                    <div class="event-card-body">
+                        <div class="event-card-meta">
+                            <span>◷ 05:00 PM</span>
+                            <span>⌖ Open Stage</span>
+                        </div>
+                        <h3>Student Music Night</h3>
+                        <p>
+                            Enjoy live performances and discover
+                            the musical talent in your school.
+                        </p>
+                        <div class="event-card-footer">
+                            <span class="event-open">Registration open</span>
+                            <a href="event-details.html"
+                               class="event-view-btn">View Details →</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="no-events" id="noEvents" hidden>
+                <span>⌕</span>
+                <h3>No events found</h3>
+                <p>Try another search or choose a different category.</p>
+            </div>
+
+            <footer class="events-footer">
+                <span>Evently · School Event Tracker</span>
+                <span>Discover. Participate. Connect.</span>
+            </footer>
+
+        </section>
+    </main>
+
+    <!-- Frontend search and category filtering -->
+    <script>
+        const searchInput = document.getElementById("eventSearch");
+        const headerSearch = document.getElementById("headerSearch");
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const eventCards = document.querySelectorAll(".event-card");
+        const eventsCount = document.getElementById("eventsCount");
+        const noEvents = document.getElementById("noEvents");
+
+        let selectedCategory = "All";
+
+        function filterEvents() {
+            const query = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            eventCards.forEach(card => {
+                const category = card.dataset.category;
+                const searchableText =
+                    card.innerText.toLowerCase() + " " +
+                    card.dataset.search.toLowerCase();
+
+                const matchesCategory =
+                    selectedCategory === "All" ||
+                    category === selectedCategory;
+
+                const matchesSearch = searchableText.includes(query);
+                const visible = matchesCategory && matchesSearch;
+
+                card.hidden = !visible;
+
+                if (visible) visibleCount++;
+            });
+
+            eventsCount.textContent =
+                visibleCount + (visibleCount === 1 ? " event" : " events");
+
+            noEvents.hidden = visibleCount !== 0;
+        }
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                filterButtons.forEach(item =>
+                    item.classList.remove("active")
+                );
+
+                button.classList.add("active");
+                selectedCategory = button.dataset.category;
+                filterEvents();
+            });
+        });
+
+        searchInput.addEventListener("input", filterEvents);
+
+        headerSearch.addEventListener("input", () => {
+            searchInput.value = headerSearch.value;
+            filterEvents();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Registrations | Evently</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+<script src="../js/auth.js"></script></head>
+
+<body class="dashboard-page registrations-page">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <a href="../index.html" class="dashboard-logo">
+            <div class="logo-icon">E</div>
+
+            <div class="logo-text">
+                <span>Evently</span>
+                <small>Student Portal</small>
+            </div>
+        </a>
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-section-title">MENU</span>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <span class="sidebar-icon">▦</span>
+                Dashboard
+            </a>
+
+            <a href="events.html" class="sidebar-link">
+                <span class="sidebar-icon">◫</span>
+                Browse Events
+            </a>
+
+            <a href="my-registrations.html"
+               class="sidebar-link active">
+
+                <span class="sidebar-icon">✓</span>
+                My Registrations
+
+            </a>
+
+            <a href="my-qr-passes.html" class="sidebar-link">
+
+                <span class="sidebar-icon">▣</span>
+                My QR Passes
+
+            </a>
+
+            <span class="nav-section-title second">
+                ACCOUNT
+            </span>
+
+            <a href="profile.html" class="sidebar-link">
+                <span class="sidebar-icon">◉</span>
+                Profile
+            </a>
+
+            <a href="settings.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                Settings
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="../login.html" class="logout-link">
+                ↪ &nbsp; Sign out
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="dashboard-main">
+
+        <!-- Header -->
+
+        <header class="dashboard-header">
+
+            <div class="header-search">
+
+                <span>⌕</span>
+
+                <input
+                    type="search"
+                    id="registrationSearch"
+                    placeholder="Search registrations..."
+                >
+
+            </div>
+
+
+            <div class="header-actions">
+
+<a href="profile.html" class="header-profile">
+
+    <div class="profile-avatar">
+        M
+    </div>
+
+    <div class="profile-info">
+
+        <strong>Mark</strong>
+
+        <span>Student</span>
+
+    </div>
+
+    <span class="profile-arrow">
+        ▾
+    </span>
+
+</a>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             PAGE CONTENT
+        ========================== -->
+
+        <section class="dashboard-content registrations-content">
+
+            <!-- Page heading -->
+
+            <div class="registrations-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        YOUR EVENT ACTIVITY
+                    </span>
+
+                    <h1>
+                        My Registrations
+                    </h1>
+
+                    <p>
+                        Keep track of the events you've registered for.
+                    </p>
+
+                </div>
+
+                <a href="events.html"
+                   class="browse-more-btn">
+
+                    + Browse More Events
+
+                </a>
+
+            </div>
+
+
+            <!-- =========================
+                 STATISTICS
+            ========================== -->
+
+            <div class="registration-stats">
+
+                <div class="registration-stat-card">
+
+                    <div class="registration-stat-icon purple">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>Total Registrations</span>
+
+                        <strong id="totalRegistrations">
+                            4
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="registration-stat-card">
+
+                    <div class="registration-stat-icon blue">
+                        ◷
+                    </div>
+
+                    <div>
+
+                        <span>Upcoming Events</span>
+
+                        <strong id="upcomingRegistrations">
+                            3
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="registration-stat-card">
+
+                    <div class="registration-stat-icon green">
+                        ★
+                    </div>
+
+                    <div>
+
+                        <span>Completed Events</span>
+
+                        <strong id="completedRegistrations">
+                            1
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 FILTERS
+            ========================== -->
+
+            <div class="registration-toolbar">
+
+                <div class="registration-tabs">
+
+                    <button
+                        class="registration-tab active"
+                        data-status="all">
+
+                        All
+
+                    </button>
+
+                    <button
+                        class="registration-tab"
+                        data-status="upcoming">
+
+                        Upcoming
+
+                    </button>
+
+                    <button
+                        class="registration-tab"
+                        data-status="completed">
+
+                        Completed
+
+                    </button>
+
+                </div>
+
+
+                <div class="registration-sort">
+
+                    <label for="sortRegistrations">
+                        Sort by
+                    </label>
+
+                    <select id="sortRegistrations">
+
+                        <option value="date">
+                            Event Date
+                        </option>
+
+                        <option value="name">
+                            Event Name
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 REGISTRATION LIST
+            ========================== -->
+
+            <div class="registrations-list"
+                 id="registrationsList">
+
+
+                <!-- Registration 1 -->
+
+                <article
+                    class="registration-event-card"
+                    data-status="upcoming"
+                    data-name="Annual Sports Day"
+                    data-date="2026-10-20">
+
+                    <div class="registration-event-icon sports">
+                        🏆
+                    </div>
+
+                    <div class="registration-event-info">
+
+                        <div class="registration-event-top">
+
+                            <span class="registration-category">
+                                SPORTS
+                            </span>
+
+                            <span class="registration-status upcoming">
+                                ● Upcoming
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Annual Sports Day
+                        </h3>
+
+                        <div class="registration-details">
+
+                            <span>
+                                📅 20 Oct 2026
+                            </span>
+
+                            <span>
+                                ◷ 09:00 AM
+                            </span>
+
+                            <span>
+                                📍 School Ground
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration-actions">
+
+                        <a href="event-details.html?id=sports"
+                           class="registration-view-btn">
+
+                            View Details
+
+                        </a>
+
+                        <a href="my-qr-passes.html?id=sports"
+                           class="registration-qr-btn">
+
+                            QR Pass
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Registration 2 -->
+
+                <article
+                    class="registration-event-card"
+                    data-status="upcoming"
+                    data-name="Science Exhibition"
+                    data-date="2026-10-25">
+
+                    <div class="registration-event-icon academic">
+                        🔬
+                    </div>
+
+                    <div class="registration-event-info">
+
+                        <div class="registration-event-top">
+
+                            <span class="registration-category">
+                                ACADEMIC
+                            </span>
+
+                            <span class="registration-status upcoming">
+                                ● Upcoming
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Science Exhibition
+                        </h3>
+
+                        <div class="registration-details">
+
+                            <span>
+                                📅 25 Oct 2026
+                            </span>
+
+                            <span>
+                                ◷ 10:00 AM
+                            </span>
+
+                            <span>
+                                📍 Science Hall
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration-actions">
+
+                        <a href="event-details.html?id=science"
+                           class="registration-view-btn">
+
+                            View Details
+
+                        </a>
+
+                        <a href="my-qr-passes.html?id=sports"
+                           class="registration-qr-btn">
+
+                            QR Pass
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Registration 3 -->
+
+                <article
+                    class="registration-event-card"
+                    data-status="upcoming"
+                    data-name="School Tech Fest"
+                    data-date="2026-11-08">
+
+                    <div class="registration-event-icon technology">
+                        💻
+                    </div>
+
+                    <div class="registration-event-info">
+
+                        <div class="registration-event-top">
+
+                            <span class="registration-category">
+                                TECHNOLOGY
+                            </span>
+
+                            <span class="registration-status upcoming">
+                                ● Upcoming
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            School Tech Fest
+                        </h3>
+
+                        <div class="registration-details">
+
+                            <span>
+                                📅 08 Nov 2026
+                            </span>
+
+                            <span>
+                                ◷ 10:30 AM
+                            </span>
+
+                            <span>
+                                📍 Innovation Lab
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration-actions">
+
+                        <a href="event-details.html?id=tech"
+                           class="registration-view-btn">
+
+                            View Details
+
+                        </a>
+
+                        <a href="my-qr-passes.html?id=sports"
+                           class="registration-qr-btn">
+
+                            QR Pass
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Registration 4 -->
+
+                <article
+                    class="registration-event-card"
+                    data-status="completed"
+                    data-name="Freshers Cultural Festival"
+                    data-date="2026-09-15">
+
+                    <div class="registration-event-icon cultural">
+                        🎭
+                    </div>
+
+                    <div class="registration-event-info">
+
+                        <div class="registration-event-top">
+
+                            <span class="registration-category">
+                                CULTURAL
+                            </span>
+
+                            <span class="registration-status completed">
+                                ✓ Completed
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Freshers Cultural Festival
+                        </h3>
+
+                        <div class="registration-details">
+
+                            <span>
+                                📅 15 Sep 2026
+                            </span>
+
+                            <span>
+                                ◷ 04:00 PM
+                            </span>
+
+                            <span>
+                                📍 Main Auditorium
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration-actions">
+
+                        <a href="event-details.html?id=cultural"
+                           class="registration-view-btn">
+
+                            View Details
+
+                        </a>
+
+                        <button
+                            class="registration-qr-btn disabled"
+                            disabled>
+
+                            Event Completed
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Empty state -->
+
+            <div class="registrations-empty"
+                 id="registrationsEmpty"
+                 hidden>
+
+                <div class="empty-registration-icon">
+                    ◫
+                </div>
+
+                <h3>
+                    No registrations found
+                </h3>
+
+                <p>
+                    Try changing your filter or browse available events.
+                </p>
+
+                <a href="events.html">
+                    Browse Events →
+                </a>
+
+            </div>
+
+
+            <!-- Footer -->
+
+            <footer class="registrations-footer">
+
+                <span>
+                    Evently · School Event Tracker
+                </span>
+
+                <span>
+                    Discover. Participate. Connect.
+                </span>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        const tabs =
+            document.querySelectorAll(".registration-tab");
+
+        const cards =
+            document.querySelectorAll(".registration-event-card");
+
+        const search =
+            document.getElementById("registrationSearch");
+
+        const empty =
+            document.getElementById("registrationsEmpty");
+
+        let selectedStatus = "all";
+
+
+        function filterRegistrations() {
+
+            const searchText =
+                search.value.toLowerCase().trim();
+
+            let visible = 0;
+
+
+            cards.forEach(card => {
+
+                const status =
+                    card.dataset.status;
+
+                const name =
+                    card.dataset.name.toLowerCase();
+
+                const matchesStatus =
+                    selectedStatus === "all" ||
+                    status === selectedStatus;
+
+                const matchesSearch =
+                    name.includes(searchText);
+
+                const show =
+                    matchesStatus && matchesSearch;
+
+                card.hidden = !show;
+
+                if (show) {
+                    visible++;
+                }
+
+            });
+
+
+            empty.hidden = visible !== 0;
+
+        }
+
+
+        tabs.forEach(tab => {
+
+            tab.addEventListener("click", () => {
+
+                tabs.forEach(item => {
+                    item.classList.remove("active");
+                });
+
+                tab.classList.add("active");
+
+                selectedStatus =
+                    tab.dataset.status;
+
+                filterRegistrations();
+
+            });
+
+        });
+
+
+        search.addEventListener(
+            "input",
+            filterRegistrations
+        );
+
+    </script>
+
+</body>
+</html>

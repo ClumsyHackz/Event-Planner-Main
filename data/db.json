@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": "2cf85df24baa51c63fba3d00",
+      "createdAt": "2026-10-13T19:56:38.286Z",
+      "updatedAt": "2026-10-13T19:56:38.286Z",
+      "role": "admin",
+      "clubVerified": true,
+      "name": "Event Planner Admin",
+      "email": "admin@eventplanner.local",
+      "passwordHash": "$2a$12$TrVCKuZz1Eq96t8pXunCjOg1T5lv/pg9SWMi4sIg21.YtifdH1uqu"
+    },
+    {
+      "id": "bc37004642eda0448619acad",
+      "createdAt": "2026-10-14T13:56:00.141Z",
+      "updatedAt": "2026-10-14T13:56:00.141Z",
+      "role": "student",
+      "clubVerified": false,
+      "name": "mama",
+      "email": "admin@example.com",
+      "passwordHash": "$2a$12$/ekOxUS6o6dM8qsZCEolgedx9j83T2TvjlTzM.C4Roksw54VAPjhS",
+      "studentId": "123456788"
+    }
+  ],
+  "events": [],
+  "registrations": []
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login | Evently</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body class="login-page">
+
+
+    <!-- =====================================
+         LEFT SIDE
+    ====================================== -->
+
+    <section class="login-visual">
+
+
+        <!-- Logo -->
+
+        <a href="index.html" class="login-logo">
+
+            <div class="logo-icon">
+                E
+            </div>
+
+            <div class="logo-text">
+
+                <span>Evently</span>
+
+                <small>
+                    School Event Tracker
+                </small>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- Main message -->
+
+        <div class="visual-content">
+
+            <span class="visual-label">
+                SCHOOL EVENT MANAGEMENT
+            </span>
+
+
+            <h1>
+                Everything happening
+                <span>in one place.</span>
+            </h1>
+
+
+            <p>
+                Stay connected with your school's events.
+                Discover activities, register with one click,
+                and never miss what's important.
+            </p>
+
+
+            <!-- Mini event preview -->
+
+            <div class="visual-event">
+
+                <div class="visual-event-date">
+
+                    <strong>
+                        20
+                    </strong>
+
+                    <span>
+                        OCT
+                    </span>
+
+                </div>
+
+
+                <div class="visual-event-info">
+
+                    <span>
+                        UPCOMING EVENT
+                    </span>
+
+                    <strong>
+                        Annual Sports Day
+                    </strong>
+
+                    <small>
+                        09:00 AM · School Ground
+                    </small>
+
+                </div>
+
+
+                <div class="event-check">
+                    ✓
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Bottom -->
+
+        <div class="visual-footer">
+
+            <span>
+                © 2026 Evently
+            </span>
+
+            <span>
+                Built for our school community
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         RIGHT SIDE
+    ====================================== -->
+
+    <section class="login-form-section">
+
+
+        <div class="login-form-container">
+
+
+            <!-- Mobile logo -->
+
+            <a
+                href="index.html"
+                class="mobile-login-logo"
+            >
+
+                <div class="logo-icon">
+                    E
+                </div>
+
+                <div class="logo-text">
+
+                    <span>Evently</span>
+
+                    <small>
+                        School Event Tracker
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- Heading -->
+
+            <div class="login-heading">
+
+                <span>
+                    WELCOME BACK
+                </span>
+
+                <h2>
+                    Sign in to Evently
+                </h2>
+
+                <p>
+                    Enter your details to access your account.
+                </p>
+
+            </div>
+
+
+
+            <!-- Login form -->
+
+            <form
+                class="login-form"
+                id="loginForm"
+            >
+
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+                    <div class="password-label">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <a href="#">
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Remember me -->
+
+                <div class="remember-row">
+
+                    <label class="remember">
+
+                        <input
+                            type="checkbox"
+                            name="remember"
+                        >
+
+                        <span>
+                            Remember me
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- Login -->
+
+                <button
+                    type="submit"
+                    class="login-submit"
+                >
+
+                    Sign In
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+            </form>
+
+
+
+            <!-- Divider -->
+
+            <div class="login-divider">
+
+                <span>
+                    OR
+                </span>
+
+            </div>
+
+
+
+            <!-- Account creation -->
+
+            <div class="create-account">
+
+                <span>
+                    Don't have an account?
+                </span>
+
+                <a href="signup.html">
+                    Create an account
+                </a>
+
+            </div>
+
+
+
+            <!-- Role information -->
+
+            <div class="role-note">
+
+                <span class="role-note-icon">
+                    ✦
+                </span>
+
+                <p>
+                    Your account type determines whether you
+                    access the <strong>Student</strong>,
+                    <strong>Organizer</strong>, or
+                    <strong>Admin</strong> dashboard.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+<script src="js/auth.js"></script>
+<script>
+document.getElementById("loginForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+    var btn = e.target.querySelector("button[type=submit]");
+    btn.disabled = true;
+    try {
+        var r = await fetch("/api/auth/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                email: document.getElementById("email").value,
+                password: document.getElementById("password").value
+            })
+        });
+        var d = await r.json();
+        if (!r.ok) throw new Error(d.error || "Login failed");
+        EventPlannerAuth.save(d);
+        location.href = EventPlannerAuth.homeFor(d.user.role);   // student / organizer / admin
+    } catch (err) {
+        alert(err.message);
+        btn.disabled = false;
+    }
+});
+</script>
+</body>
+
+</html>

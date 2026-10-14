@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | Evently</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+<script src="../js/auth.js"></script></head>
+
+<body class="dashboard-page settings-page">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <a href="../index.html" class="dashboard-logo">
+
+            <div class="logo-icon">E</div>
+
+            <div class="logo-text">
+                <span>Evently</span>
+                <small>Student Portal</small>
+            </div>
+
+        </a>
+
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-section-title">
+                MENU
+            </span>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <span class="sidebar-icon">▦</span>
+                Dashboard
+            </a>
+
+            <a href="events.html" class="sidebar-link">
+                <span class="sidebar-icon">◫</span>
+                Browse Events
+            </a>
+
+            <a href="my-registrations.html" class="sidebar-link">
+                <span class="sidebar-icon">✓</span>
+                My Registrations
+            </a>
+
+            <a href="my-qr-passes.html" class="sidebar-link">
+                <span class="sidebar-icon">▣</span>
+                My QR Passes
+            </a>
+
+
+            <span class="nav-section-title second">
+                ACCOUNT
+            </span>
+
+            <a href="profile.html" class="sidebar-link">
+                <span class="sidebar-icon">◉</span>
+                Profile
+            </a>
+
+            <a href="settings.html"
+               class="sidebar-link active">
+
+                <span class="sidebar-icon">⚙</span>
+                Settings
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="../login.html" class="logout-link">
+                ↪ &nbsp; Sign out
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="dashboard-main">
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <div class="header-search">
+
+                <span>⌕</span>
+
+                <input
+                    type="search"
+                    placeholder="Search..."
+                >
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <div class="header-profile">
+
+                    <div class="profile-avatar">
+                        M
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong>Mark</strong>
+
+                        <span>Student</span>
+
+                    </div>
+
+                    <span class="profile-arrow">
+                        ▾
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             PAGE CONTENT
+        ========================== -->
+
+        <section class="dashboard-content settings-content">
+
+            <!-- HEADING -->
+
+            <div class="settings-heading">
+
+                <span class="eyebrow">
+                    ACCOUNT
+                </span>
+
+                <h1>
+                    Settings
+                </h1>
+
+                <p>
+                    Manage your account preferences and notifications.
+                </p>
+
+            </div>
+
+
+            <!-- =========================
+                 SETTINGS LAYOUT
+            ========================== -->
+
+            <div class="settings-layout">
+
+
+                <!-- =========================
+                     NOTIFICATIONS
+                ========================== -->
+
+                <section class="settings-card">
+
+                    <div class="settings-card-heading">
+
+                        <div>
+
+                            <span>
+                                NOTIFICATIONS
+                            </span>
+
+                            <h2>
+                                Notification Preferences
+                            </h2>
+
+                        </div>
+
+                        <div class="settings-icon">
+                            🔔
+                        </div>
+
+                    </div>
+
+
+                    <div class="setting-option">
+
+                        <div class="setting-text">
+
+                            <strong>
+                                Event Reminders
+                            </strong>
+
+                            <p>
+                                Receive reminders before your registered events.
+                            </p>
+
+                        </div>
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="eventReminders"
+                                checked
+                            >
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="setting-option">
+
+                        <div class="setting-text">
+
+                            <strong>
+                                New Event Notifications
+                            </strong>
+
+                            <p>
+                                Get notified when new events are published.
+                            </p>
+
+                        </div>
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="newEvents"
+                                checked
+                            >
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="setting-option">
+
+                        <div class="setting-text">
+
+                            <strong>
+                                Registration Updates
+                            </strong>
+
+                            <p>
+                                Receive updates about your event registrations.
+                            </p>
+
+                        </div>
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="registrationUpdates"
+                                checked
+                            >
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     ACCOUNT SECURITY
+                ========================== -->
+
+                <section class="settings-card">
+
+                    <div class="settings-card-heading">
+
+                        <div>
+
+                            <span>
+                                SECURITY
+                            </span>
+
+                            <h2>
+                                Account Security
+                            </h2>
+
+                        </div>
+
+                        <div class="settings-icon">
+                            🔒
+                        </div>
+
+                    </div>
+
+
+                    <div class="security-row">
+
+                        <div>
+
+                            <strong>
+                                Password
+                            </strong>
+
+                            <p>
+                                Last changed recently
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="settings-action-btn"
+                            onclick="changePassword()">
+
+                            Change Password
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="security-row">
+
+                        <div>
+
+                            <strong>
+                                Account Status
+                            </strong>
+
+                            <p>
+                                Your student account is active.
+                            </p>
+
+                        </div>
+
+                        <span class="account-status">
+                            ● Active
+                        </span>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     PRIVACY
+                ========================== -->
+
+                <section class="settings-card">
+
+                    <div class="settings-card-heading">
+
+                        <div>
+
+                            <span>
+                                PRIVACY
+                            </span>
+
+                            <h2>
+                                Privacy Settings
+                            </h2>
+
+                        </div>
+
+                        <div class="settings-icon">
+                            🛡
+                        </div>
+
+                    </div>
+
+
+                    <div class="setting-option">
+
+                        <div class="setting-text">
+
+                            <strong>
+                                Show Profile Information
+                            </strong>
+
+                            <p>
+                                Allow event organizers to view your basic student information.
+                            </p>
+
+                        </div>
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="profileVisibility"
+                                checked
+                            >
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="setting-option">
+
+                        <div class="setting-text">
+
+                            <strong>
+                                Event Attendance History
+                            </strong>
+
+                            <p>
+                                Keep your event attendance history visible in your account.
+                            </p>
+
+                        </div>
+
+                        <label class="toggle">
+
+                            <input
+                                type="checkbox"
+                                id="attendanceHistory"
+                                checked
+                            >
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     ACCOUNT ACTIONS
+                ========================== -->
+
+                <section class="settings-card danger-card">
+
+                    <div class="settings-card-heading">
+
+                        <div>
+
+                            <span>
+                                ACCOUNT ACTIONS
+                            </span>
+
+                            <h2>
+                                Manage Account
+                            </h2>
+
+                        </div>
+
+                        <div class="settings-icon danger-icon">
+                            ⚠
+                        </div>
+
+                    </div>
+
+
+                    <div class="account-action-row">
+
+                        <div>
+
+                            <strong>
+                                Sign Out
+                            </strong>
+
+                            <p>
+                                Sign out from your Evently student account.
+                            </p>
+
+                        </div>
+
+                        <a
+                            href="../login.html"
+                            class="signout-btn">
+
+                            Sign Out
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- SAVE -->
+
+            <div class="settings-save-area">
+
+                <button
+                    class="save-settings-btn"
+                    onclick="saveSettings()">
+
+                    Save Changes
+
+                </button>
+
+            </div>
+
+
+            <!-- FOOTER -->
+
+            <footer class="settings-footer">
+
+                <span>
+                    Evently · School Event Tracker
+                </span>
+
+                <span>
+                    Student Settings
+                </span>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        function saveSettings() {
+
+            alert("Your settings have been saved.");
+
+        }
+
+
+        function changePassword() {
+
+            alert(
+                "Password changing will be connected to the Java backend later."
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

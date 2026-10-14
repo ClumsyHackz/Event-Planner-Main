@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Dashboard | Evently</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+<script src="../js/auth.js"></script></head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar">
+
+
+        <!-- Logo -->
+
+        <a href="../index.html" class="dashboard-logo">
+
+            <div class="logo-icon">
+                E
+            </div>
+
+            <div class="logo-text">
+
+                <span>Evently</span>
+
+                <small>
+                    Student Portal
+                </small>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- Navigation -->
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-section-title">
+                MENU
+            </span>
+
+
+            <a
+                href="dashboard.html"
+                class="sidebar-link active"
+            >
+
+                <span class="sidebar-icon">
+                    ▦
+                </span>
+
+                Dashboard
+
+            </a>
+
+
+            <a
+                href="events.html"
+                class="sidebar-link"
+            >
+
+                <span class="sidebar-icon">
+                    ◫
+                </span>
+
+                Browse Events
+
+            </a>
+
+
+            <a
+                href="my-registrations.html"
+                class="sidebar-link"
+            >
+
+                <span class="sidebar-icon">
+                    ✓
+                </span>
+
+                My Registrations
+
+            </a>
+
+
+            <a
+                href="my-qr-passes.html"
+                class="sidebar-link"
+            >
+
+                <span class="sidebar-icon">
+                    ▣
+                </span>
+
+                My QR Passes
+
+            </a>
+
+
+
+            <span class="nav-section-title second">
+                ACCOUNT
+            </span>
+
+
+            <a href="profile.html" class="sidebar-link">
+
+                <span class="sidebar-icon">
+                    ◉
+                </span>
+
+                Profile
+
+            </a>
+
+
+            <a href="settings.html" class="sidebar-link">
+
+                <span class="sidebar-icon">
+                    ⚙
+                </span>
+
+                Settings
+
+            </a>
+
+        </nav>
+
+
+
+        <!-- Sidebar bottom -->
+
+        <div class="sidebar-bottom">
+
+            <a href="../login.html" class="logout-link">
+
+                <span>
+                    ↪
+                </span>
+
+                Sign out
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =========================================
+         MAIN AREA
+    ========================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- Top bar -->
+
+        <header class="dashboard-header">
+
+
+            <div class="mobile-menu">
+                ☰
+            </div>
+
+
+            <div class="header-search">
+
+                <span>
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Search events..."
+                >
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button class="notification-button">
+
+                    ♧
+
+                    <span class="notification-dot"></span>
+
+                </button>
+            <a href="profile.html" class="header-profile">
+
+    <div class="profile-avatar">
+        M
+    </div>
+
+    <div class="profile-info">
+
+        <strong>Mark</strong>
+
+        <span>Student</span>
+
+    </div>
+
+    <span class="profile-arrow">
+        ▾
+    </span>
+
+</a>
+
+
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================
+             DASHBOARD CONTENT
+        ====================================== -->
+
+        <section class="dashboard-content">
+
+
+            <!-- Welcome -->
+
+            <div class="dashboard-welcome">
+
+                <div>
+
+                    <span>
+                        WEDNESDAY, OCTOBER 8, 2026
+                    </span>
+
+                    <h1>
+                        Good evening, Mark 👋
+                    </h1>
+
+                    <p>
+                        Here's what's happening around your school.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="events.html"
+                    class="dashboard-primary-button"
+                >
+
+                    <span>+</span>
+
+                    Browse Events
+
+                </a>
+
+            </div>
+
+
+
+            <!-- =================================
+                 STAT CARDS
+            ================================== -->
+
+            <div class="dashboard-stats">
+
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-icon blue">
+                        ◫
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Upcoming Events
+                        </span>
+
+                        <strong>
+                            12
+                        </strong>
+
+                        <small>
+                            Available to attend
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-icon purple">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Registered Events
+                        </span>
+
+                        <strong>
+                            04
+                        </strong>
+
+                        <small>
+                            Events you're attending
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-icon green">
+                        ▣
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Active Passes
+                        </span>
+
+                        <strong>
+                            03
+                        </strong>
+
+                        <small>
+                            Ready to use
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-icon orange">
+                        ★
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Events Attended
+                        </span>
+
+                        <strong>
+                            08
+                        </strong>
+
+                        <small>
+                            This academic year
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 MAIN GRID
+            ================================== -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- Upcoming events -->
+
+                <div class="dashboard-panel events-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span>
+                                YOUR SCHEDULE
+                            </span>
+
+                            <h2>
+                                Upcoming Events
+                            </h2>
+
+                        </div>
+
+                        <a href="events.html">
+                            View all →
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- Event 1 -->
+
+                    <div class="dashboard-event">
+
+                        <div class="dashboard-event-date">
+
+                            <strong>
+                                20
+                            </strong>
+
+                            <span>
+                                OCT
+                            </span>
+
+                        </div>
+
+
+                        <div class="dashboard-event-info">
+
+                            <div>
+
+                                <span class="event-category">
+                                    SPORTS
+                                </span>
+
+                                <h3>
+                                    Annual Sports Day
+                                </h3>
+
+                                <p>
+                                    ◷ 09:00 AM &nbsp; · &nbsp;
+                                    ⌖ School Ground
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="registered-badge">
+                            Registered
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Event 2 -->
+
+                    <div class="dashboard-event">
+
+                        <div class="dashboard-event-date">
+
+                            <strong>
+                                25
+                            </strong>
+
+                            <span>
+                                OCT
+                            </span>
+
+                        </div>
+
+
+                        <div class="dashboard-event-info">
+
+                            <div>
+
+                                <span class="event-category">
+                                    ACADEMIC
+                                </span>
+
+                                <h3>
+                                    Science Exhibition
+                                </h3>
+
+                                <p>
+                                    ◷ 10:00 AM &nbsp; · &nbsp;
+                                    ⌖ Science Hall
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="event-details.html"
+                            class="register-small"
+                        >
+                            Register
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- Event 3 -->
+
+                    <div class="dashboard-event">
+
+                        <div class="dashboard-event-date">
+
+                            <strong>
+                                02
+                            </strong>
+
+                            <span>
+                                NOV
+                            </span>
+
+                        </div>
+
+
+                        <div class="dashboard-event-info">
+
+                            <div>
+
+                                <span class="event-category">
+                                    CULTURAL
+                                </span>
+
+                                <h3>
+                                    Cultural Festival
+                                </h3>
+
+                                <p>
+                                    ◷ 11:00 AM &nbsp; · &nbsp;
+                                    ⌖ Main Auditorium
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="event-details.html"
+                            class="register-small"
+                        >
+                            Register
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- Event 4 -->
+
+                    <div class="dashboard-event">
+
+                        <div class="dashboard-event-date">
+
+                            <strong>
+                                08
+                            </strong>
+
+                            <span>
+                                NOV
+                            </span>
+
+                        </div>
+
+
+                        <div class="dashboard-event-info">
+
+                            <div>
+
+                                <span class="event-category">
+                                    TECHNOLOGY
+                                </span>
+
+                                <h3>
+                                    School Tech Fest
+                                </h3>
+
+                                <p>
+                                    ◷ 10:30 AM &nbsp; · &nbsp;
+                                    ⌖ Innovation Lab
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="event-details.html"
+                            class="register-small"
+                        >
+                            Register
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     RIGHT COLUMN
+                ================================== -->
+
+                <div class="dashboard-side-column">
+
+
+                    <!-- QR Pass -->
+
+                    <div class="dashboard-panel pass-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <span>
+                                    YOUR NEXT EVENT
+                                </span>
+
+                                <h2>
+                                    Event Pass
+                                </h2>
+
+                            </div>
+
+                            <span class="pass-active">
+                                Active
+                            </span>
+
+                        </div>
+
+
+                        <div class="pass-event">
+
+                            <div class="pass-event-icon">
+                                S
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Annual Sports Day
+                                </strong>
+
+                                <span>
+                                    20 October 2026
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="qr-placeholder">
+
+                            <div class="qr-pattern">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <small>
+                                EVENT PASS
+                            </small>
+
+                        </div>
+
+
+                        <a
+                            href="my-qr-passes.html"
+                            class="view-pass-button"
+                        >
+                            View Full Pass →
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- Quick actions -->
+
+                    <div class="dashboard-panel quick-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <span>
+                                    QUICK ACTIONS
+                                </span>
+
+                                <h2>
+                                    What would you like to do?
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="quick-actions">
+
+                            <a href="events.html">
+
+                                <span class="quick-icon blue">
+                                    ◫
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Find an Event
+                                    </strong>
+
+                                    <small>
+                                        Browse upcoming events
+                                    </small>
+
+                                </div>
+
+                                <span class="quick-arrow">
+                                    →
+                                </span>
+
+                            </a>
+
+
+                            <a href="my-registrations.html">
+
+                                <span class="quick-icon purple">
+                                    ✓
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        My Registrations
+                                    </strong>
+
+                                    <small>
+                                        View your registered events
+                                    </small>
+
+                                </div>
+
+                                <span class="quick-arrow">
+                                    →
+                                </span>
+
+                            </a>
+
+
+                            <a href="my-qr-passes.html">
+
+                                <span class="quick-icon green">
+                                    ▣
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        View QR Pass
+                                    </strong>
+
+                                    <small>
+                                        Show your event pass
+                                    </small>
+
+                                </div>
+
+                                <span class="quick-arrow">
+                                    →
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

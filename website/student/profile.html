@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | Evently</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+<script src="../js/auth.js"></script></head>
+
+<body class="dashboard-page profile-page">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <a href="../index.html" class="dashboard-logo">
+
+            <div class="logo-icon">E</div>
+
+            <div class="logo-text">
+                <span>Evently</span>
+                <small>Student Portal</small>
+            </div>
+
+        </a>
+
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-section-title">
+                MENU
+            </span>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <span class="sidebar-icon">▦</span>
+                Dashboard
+            </a>
+
+            <a href="events.html" class="sidebar-link">
+                <span class="sidebar-icon">◫</span>
+                Browse Events
+            </a>
+
+            <a href="my-registrations.html" class="sidebar-link">
+                <span class="sidebar-icon">✓</span>
+                My Registrations
+            </a>
+
+            <a href="my-qr-passes.html" class="sidebar-link">
+                <span class="sidebar-icon">▣</span>
+                My QR Passes
+            </a>
+
+
+            <span class="nav-section-title second">
+                ACCOUNT
+            </span>
+
+            <a href="profile.html"
+               class="sidebar-link active">
+
+                <span class="sidebar-icon">◉</span>
+                Profile
+
+            </a>
+
+            <a href="settings.html"
+               class="sidebar-link">
+
+                <span class="sidebar-icon">⚙</span>
+                Settings
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="../login.html" class="logout-link">
+                ↪ &nbsp; Sign out
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="dashboard-main">
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <div class="header-search">
+
+                <span>⌕</span>
+
+                <input
+                    type="search"
+                    placeholder="Search..."
+                >
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <div class="header-profile">
+
+                    <div class="profile-avatar">
+                        M
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong>Mark</strong>
+
+                        <span>Student</span>
+
+                    </div>
+
+                    <span class="profile-arrow">
+                        ▾
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             PAGE CONTENT
+        ========================== -->
+
+        <section class="dashboard-content profile-content">
+
+            <!-- PAGE HEADING -->
+
+            <div class="profile-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        ACCOUNT
+                    </span>
+
+                    <h1>
+                        My Profile
+                    </h1>
+
+                    <p>
+                        Manage your personal information and student details.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 PROFILE HERO
+            ========================== -->
+
+            <section class="profile-hero">
+
+                <div class="profile-large-avatar">
+                    M
+                </div>
+
+                <div class="profile-hero-info">
+
+                    <span class="profile-role">
+                        STUDENT ACCOUNT
+                    </span>
+
+                    <h2>
+                        Mark
+                    </h2>
+
+                    <p>
+                        Student ID: GU2026001
+                    </p>
+
+                    <span class="profile-active">
+                        ● Active Account
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="edit-profile-btn"
+                    id="editProfileBtn">
+
+                    Edit Profile
+
+                </button>
+
+            </section>
+
+
+            <!-- =========================
+                 PROFILE INFORMATION
+            ========================== -->
+
+            <div class="profile-layout">
+
+                <!-- Personal Information -->
+
+                <section class="profile-card">
+
+                    <div class="profile-card-heading">
+
+                        <div>
+
+                            <span>
+                                PERSONAL INFORMATION
+                            </span>
+
+                            <h2>
+                                Basic Details
+                            </h2>
+
+                        </div>
+
+                        <div class="profile-card-icon">
+                            ◉
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-fields">
+
+                        <div class="profile-field">
+
+                            <label>
+                                Full Name
+                            </label>
+
+                            <div class="profile-value">
+                                Mark
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label>
+                                Student ID
+                            </label>
+
+                            <div class="profile-value">
+                                GU2026001
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label>
+                                Email Address
+                            </label>
+
+                            <div class="profile-value">
+                                mark@student.edu
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label>
+                                Phone Number
+                            </label>
+
+                            <div class="profile-value">
+                                +91 98765 43210
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Academic Information -->
+
+                <section class="profile-card">
+
+                    <div class="profile-card-heading">
+
+                        <div>
+
+                            <span>
+                                ACADEMIC INFORMATION
+                            </span>
+
+                            <h2>
+                                Student Details
+                            </h2>
+
+                        </div>
+
+                        <div class="profile-card-icon">
+                            🎓
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-fields">
+
+                        <div class="profile-field">
+
+                            <label>
+                                Course
+                            </label>
+
+                            <div class="profile-value">
+                                B.Tech Computer Science
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label>
+                                Specialization
+                            </label>
+
+                            <div class="profile-value">
+                                Artificial Intelligence & Machine Learning
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label>
+                                Year of Study
+                            </label>
+
+                            <div class="profile-value">
+                                1st Year
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label>
+                                Department
+                            </label>
+
+                            <div class="profile-value">
+                                Computer Science & Engineering
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- =========================
+                 ACCOUNT SUMMARY
+            ========================== -->
+
+            <section class="profile-card account-summary-card">
+
+                <div class="profile-card-heading">
+
+                    <div>
+
+                        <span>
+                            EVENT ACTIVITY
+                        </span>
+
+                        <h2>
+                            Your Evently Summary
+                        </h2>
+
+                    </div>
+
+                    <div class="profile-card-icon">
+                        ◈
+                    </div>
+
+                </div>
+
+
+                <div class="profile-summary-grid">
+
+                    <div class="profile-summary-item">
+
+                        <strong>
+                            4
+                        </strong>
+
+                        <span>
+                            Events Registered
+                        </span>
+
+                    </div>
+
+
+                    <div class="profile-summary-item">
+
+                        <strong>
+                            3
+                        </strong>
+
+                        <span>
+                            Upcoming Events
+                        </span>
+
+                    </div>
+
+
+                    <div class="profile-summary-item">
+
+                        <strong>
+                            1
+                        </strong>
+
+                        <span>
+                            Events Attended
+                        </span>
+
+                    </div>
+
+
+                    <div class="profile-summary-item">
+
+                        <strong>
+                            3
+                        </strong>
+
+                        <span>
+                            QR Passes
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+
+            <footer class="profile-footer">
+
+                <span>
+                    Evently · School Event Tracker
+                </span>
+
+                <span>
+                    Manage your student account
+                </span>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        const editButton =
+            document.getElementById("editProfileBtn");
+
+        editButton.addEventListener("click", function () {
+
+            alert(
+                "Profile editing will be connected to the Java backend and SQL database later."
+            );
+
+        });
+
+    </script>
+
+</body>
+
+</html>
